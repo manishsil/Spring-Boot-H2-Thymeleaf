@@ -75,4 +75,9 @@ public class StudentController {
         model.addAttribute("students", studentRepository.findAll());
         return "index";
     }
+
+    @GetMapping(value = "/{name}")
+	public String sampleEndPointWelcomeMsg(@PathVariable("name") String name) {
+		return "Welcome "+name;
+	}
 }
