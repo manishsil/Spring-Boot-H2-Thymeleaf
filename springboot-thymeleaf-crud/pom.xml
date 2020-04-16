@@ -12,6 +12,7 @@
 	<artifactId>springboot-thymeleaf-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-thymeleaf-crud</name>
+	<!-- <packaging>war</packaging> -->
 	<description>Simple CRUD demo with H2</description>
 
 	<properties>
@@ -32,6 +33,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
